@@ -1,14 +1,13 @@
 :root {
-    --bg-main: #f5f5f5;         /* Pure light neutral grey background */
-    --bg-card: #ffffff;         /* Pure white cards */
-    --border-color: #e5e5e5;    /* Neutral grey borders */
+    --bg-main: #f5f5f5;         
+    --bg-card: #ffffff;         
+    --border-color: #e5e5e5;    
     --border-hover: #d4d4d4;
     --text-primary: #171717;
-    --text-secondary: #525252;  /* Medium neutral grey */
-    --btn-primary: #404040;     /* Neutral dark grey button */
+    --text-secondary: #525252;  
+    --btn-primary: #404040;     
     --btn-primary-hover: #171717;
 
-    /* Form & Tab Variables */
     --bg-input: #f5f5f5;
     --bg-input-focus: #ffffff;
     --btn-tab: #ffffff;
@@ -48,9 +47,7 @@ a:hover {
     padding: 0 24px;
 }
 
-/* =========================================
-   Splash Screen Overlay
-   ========================================= */
+/* Splash Screen Overlay */
 #splash-screen {
     position: fixed;
     top: 0;
@@ -94,7 +91,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--bg-card);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -145,7 +142,6 @@ nav a.active, nav a:hover {
     color: var(--text-primary);
 }
 
-/* Solid Filled Contact Button */
 .btn-nav {
     display: inline-block !important;
     padding: 8px 18px !important;
@@ -271,10 +267,10 @@ nav a.active, nav a:hover {
 .hero .btn-secondary {
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.15);   /* subtle frosted fill */
+    background: rgba(255, 255, 255, 0.15);
 }
 .hero .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.25);
     border-color: #ffffff;
     color: #ffffff;
 }
@@ -282,6 +278,7 @@ nav a.active, nav a:hover {
 /* Feature / Card Grids */
 .section {
     padding: 70px 0;
+    background-color: var(--bg-main);
 }
 
 .section-head {
@@ -313,6 +310,7 @@ nav a.active, nav a:hover {
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    color: var(--text-primary);
 }
 
 .card h3 {
@@ -321,9 +319,8 @@ nav a.active, nav a:hover {
     color: var(--text-primary);
 }
 
-.card p {
+.card p, .card li, .card th, .card td {
     color: var(--text-secondary);
-    font-size: 0.95rem;
 }
 
 /* Past Work & Dealer Cards */
@@ -498,12 +495,10 @@ footer {
     background: var(--bg-card);
 }
 
-/* =========================================
-   Dark Mode Override (True Grey/Black)
-   ========================================= */
+/* Dark Mode Override */
 body.dark-mode {
-    --bg-main: #121212;         /* Pure dark grey/black background */
-    --bg-card: #1e1e1e;         /* Elevated neutral grey for cards */
+    --bg-main: #121212;         
+    --bg-card: #1e1e1e;         
     --border-color: #333333;
     --border-hover: #444444;
     --text-primary: #e8eaed;
@@ -521,7 +516,6 @@ body.dark-mode header {
     background: rgba(18, 18, 18, 0.95);
 }
 
-/* Keep the logo white, match the border to dark mode, NO inversion */
 body.dark-mode .brand-logo,
 body.dark-mode .splash-logo {
     background-color: #ffffff;
@@ -529,62 +523,19 @@ body.dark-mode .splash-logo {
     filter: none;
 }
 
-
-/* =========================================
-   Mobile Responsiveness
-   ========================================= */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    /* ---- Mobile header / nav ---- */
     .nav-wrap {
         flex-direction: column;
         height: auto;
-        padding: 10px 16px 8px;
-        gap: 8px;
-    }
-
-    .brand {
-        font-size: 1rem;
-        letter-spacing: 0.12em;
-        gap: 10px;
-    }
-
-    .brand-logo {
-        height: 38px;
-        width: 38px;
-    }
-
-    nav {
-        width: 100%;
-        padding-top: 8px;
-        border-top: 1px solid var(--border-color);
+        padding: 12px 0;
+        gap: 12px;
     }
 
     nav ul {
-        width: 100%;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 6px;
-    }
-
-    nav a {
-        font-size: 0.85rem;
-        padding: 6px 8px;
-        display: inline-block;
-    }
-
-    /* Contact: outlined instead of solid, so it doesn't look "selected" */
-    .btn-nav {
-        padding: 6px 14px !important;
-        background-color: transparent !important;
-        color: var(--text-primary) !important;
-        border: 1px solid var(--text-secondary) !important;
-    }
-
-    .btn-nav:hover,
-    .btn-nav.active {
-        background-color: var(--btn-primary) !important;
-        color: #ffffff !important;
-        border-color: var(--btn-primary) !important;
+        justify-content: center;
+        gap: 12px;
     }
 
     .hero {
@@ -639,33 +590,6 @@ body.dark-mode .splash-logo {
 
     .card {
         padding: 24px;
-    }
-
-    /* ---- Mobile: lead with the Export Process ---- */
-    #main-content {
-        display: flex;
-        flex-direction: column;
-        scroll-margin-top: 90px;   /* keeps the heading clear of the sticky header */
-    }
-
-    #process  { order: 1; }
-    #services { order: 2; border-top: 1px solid var(--border-color); }
-
-    .process-section .section-head {
-        margin-bottom: 28px;
-    }
-
-    .process-grid {
-        gap: 14px;
-    }
-
-    .process-grid .card {
-        padding: 20px;
-    }
-
-    .process-grid .card h3 {
-        font-size: 1.1rem;
-        margin-bottom: 8px;
     }
 
     .tab-nav {
