@@ -1,14 +1,13 @@
 :root {
-    --bg-main: #f5f5f5;         /* Pure light neutral grey background */
+    --bg-main: #f5f5f5;         /* Light neutral grey background */
     --bg-card: #ffffff;         /* Pure white cards */
     --border-color: #e5e5e5;    /* Neutral grey borders */
     --border-hover: #d4d4d4;
-    --text-primary: #171717;
-    --text-secondary: #525252;  /* Medium neutral grey */
+    --text-primary: #171717;    /* Near-black primary text */
+    --text-secondary: #525252;  /* Medium neutral grey text */
     --btn-primary: #404040;     /* Neutral dark grey button */
     --btn-primary-hover: #171717;
 
-    /* Form & Tab Variables */
     --bg-input: #f5f5f5;
     --bg-input-focus: #ffffff;
     --btn-tab: #ffffff;
@@ -22,6 +21,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -39,7 +42,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 .container {
@@ -89,7 +92,9 @@ a:hover {
     to { transform: scale(1.05); }
 }
 
-/* Header & Nav */
+/* =========================================
+   Header & Navigation
+   ========================================= */
 header {
     position: sticky;
     top: 0;
@@ -145,7 +150,6 @@ nav a.active, nav a:hover {
     color: var(--text-primary);
 }
 
-/* Solid Filled Contact Button */
 .btn-nav {
     display: inline-block !important;
     padding: 8px 18px !important;
@@ -161,10 +165,23 @@ nav a.active, nav a:hover {
     color: #ffffff !important;
 }
 
-/* Hero Section */
+.theme-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    line-height: 1;
+    color: var(--text-primary);
+}
+
+/* =========================================
+   Hero Section
+   ========================================= */
 .hero {
     position: relative;
-    padding: 120px 0 100px;
+    padding: 120px 0 110px;
     text-align: center;
     background: linear-gradient(rgba(23, 23, 23, 0.75), rgba(23, 23, 23, 0.85)), url('shibuya.jpeg') center/cover no-repeat;
     color: #ffffff;
@@ -173,8 +190,8 @@ nav a.active, nav a:hover {
 .hero .badge {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 999px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -185,7 +202,7 @@ nav a.active, nav a:hover {
 }
 
 .hero h1 {
-    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
     font-weight: 800;
     letter-spacing: -0.03em;
     line-height: 1.15;
@@ -203,13 +220,14 @@ nav a.active, nav a:hover {
 .hero-actions {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
 /* Bouncing Arrow */
 .scroll-arrow {
     position: absolute;
-    bottom: 30px;
+    bottom: 28px;
     left: 50%;
     transform: translateX(-50%);
     color: #ffffff;
@@ -236,57 +254,71 @@ nav a.active, nav a:hover {
     60% { transform: translate(-50%, -5px); }
 }
 
+/* =========================================
+   Buttons
+   ========================================= */
 .btn {
-    padding: 14px 32px;
+    padding: 14px 28px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.95rem;
     display: inline-block;
     cursor: pointer;
-    border: none;
+    border: 1px solid transparent;
     transition: all 0.2s;
+    text-align: center;
 }
 
 .btn-primary {
-    background: var(--btn-primary);
-    color: #ffffff;
+    background-color: var(--btn-primary);
+    color: #ffffff !important;
 }
 
 .btn-primary:hover {
-    background: var(--btn-primary-hover);
+    background-color: var(--btn-primary-hover);
     transform: translateY(-1px);
 }
 
 .btn-secondary {
     border: 1px solid var(--border-color);
     color: var(--text-primary);
-    background: transparent;
+    background-color: var(--bg-input);
 }
 
 .btn-secondary:hover {
     border-color: var(--text-secondary);
-    background: var(--bg-main);
+    background-color: var(--border-color);
 }
 
 .hero .btn-secondary {
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.15);   /* subtle frosted fill */
-}
-.hero .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: #ffffff;
-    color: #ffffff;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(4px);
 }
 
-/* Feature / Card Grids */
+.hero .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.28);
+    border-color: #ffffff;
+}
+
+/* =========================================
+   Sections, Grids & Cards
+   ========================================= */
 .section {
-    padding: 70px 0;
+    padding: 76px 0;
+    background-color: var(--bg-main);
+}
+
+.section-alt {
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .section-head {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 .section-head h2 {
@@ -298,21 +330,34 @@ nav a.active, nav a:hover {
 
 .section-head p {
     color: var(--text-secondary);
-    font-size: 1.1rem;
+    font-size: 1.08rem;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
 }
 
 .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
 }
 
 .card {
-    background: var(--bg-card);
+    background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 40px;
+    padding: 36px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    color: var(--text-primary);
+}
+
+.section-alt .card {
+    background-color: var(--bg-main);
 }
 
 .card h3 {
@@ -326,25 +371,74 @@ nav a.active, nav a:hover {
     font-size: 0.95rem;
 }
 
-/* Past Work & Dealer Cards */
+/* =========================================
+   Tables (Pricing & Shipping)
+   ========================================= */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0 24px;
+    font-size: 0.95rem;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.data-table th {
+    font-weight: 700;
+    border-bottom: 2px solid var(--border-hover);
+    color: var(--text-primary);
+}
+
+.data-table td.right,
+.data-table th.right {
+    text-align: right;
+}
+
+.data-table tr.total-row td {
+    font-weight: 800;
+    font-size: 1.05rem;
+    border-top: 2px solid var(--border-hover);
+    border-bottom: none;
+}
+
+/* =========================================
+   Dealer & Past Export Cards
+   ========================================= */
 .work-card {
-    background: var(--bg-card);
+    background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
 }
 
 .work-img {
     width: 100%;
-    height: 240px;
+    height: 220px;
     object-fit: cover;
-    background: var(--bg-main);
+    background-color: var(--bg-input);
     border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .work-content {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .work-tag {
@@ -355,7 +449,35 @@ nav a.active, nav a:hover {
     letter-spacing: 0.08em;
 }
 
-/* Sourcing Tabs */
+.work-content h3 {
+    margin: 8px 0;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+}
+
+.work-price {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.work-desc {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.work-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* =========================================
+   Sourcing Tabs
+   ========================================= */
 .tab-nav {
     display: flex;
     justify-content: center;
@@ -364,9 +486,9 @@ nav a.active, nav a:hover {
 }
 
 .tab-btn {
-    padding: 12px 24px;
+    padding: 12px 28px;
     border: 1px solid var(--border-color);
-    background: var(--btn-tab);
+    background-color: var(--btn-tab);
     color: var(--text-secondary);
     border-radius: 8px;
     font-weight: 600;
@@ -376,19 +498,19 @@ nav a.active, nav a:hover {
 }
 
 .tab-btn:hover {
-    background: var(--btn-tab-hover);
+    background-color: var(--btn-tab-hover);
     color: var(--text-primary);
 }
 
 .tab-btn.active {
-    background: var(--text-primary);
+    background-color: var(--btn-primary);
     color: #ffffff;
-    border-color: var(--text-primary);
+    border-color: var(--btn-primary);
 }
 
 .tab-content {
     display: none;
-    animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.25s ease-in-out;
 }
 
 .tab-content.active {
@@ -396,15 +518,17 @@ nav a.active, nav a:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
+    from { opacity: 0; transform: translateY(4px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Forms & Inputs */
+/* =========================================
+   Forms & Inputs
+   ========================================= */
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
-    gap: 48px;
+    gap: 40px;
     align-items: start;
 }
 
@@ -431,25 +555,55 @@ nav a.active, nav a:hover {
     font-weight: 600;
 }
 
+.field-disclaimer {
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+    line-height: 1.4;
+    margin-top: 4px;
+}
+
 input, select, textarea {
     width: 100%;
-    padding: 14px 16px;
-    background: var(--bg-input);
+    padding: 13px 15px;
+    background-color: var(--bg-input);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     color: var(--text-primary);
     font-family: inherit;
     font-size: 0.95rem;
-    transition: border-color 0.2s, background 0.2s;
+    transition: border-color 0.2s, background-color 0.2s;
 }
 
 input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: var(--text-secondary);
-    background: var(--bg-input-focus);
+    background-color: var(--bg-input-focus);
 }
 
-/* Social Icons */
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.info-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+}
+
+.info-val {
+    font-size: 1.02rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* =========================================
+   Social Icons & Footer
+   ========================================= */
 .social-links {
     display: flex;
     justify-content: center;
@@ -466,7 +620,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .social-links a:hover {
-    opacity: 0.7;
+    opacity: 0.75;
     transform: translateY(-2px);
 }
 
@@ -475,8 +629,34 @@ input:focus, select:focus, textarea:focus {
     height: 24px;
 }
 
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 48px 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-align: center;
+    background-color: var(--bg-card);
+}
+
+footer .footer-brand {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+footer .footer-links {
+    margin-bottom: 18px;
+}
+
+footer .footer-links a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 footer .social-links {
-    margin-top: 20px;
+    margin-top: 16px;
+    margin-bottom: 20px;
 }
 
 footer .social-links a {
@@ -487,23 +667,12 @@ footer .social-links a:hover {
     color: var(--text-primary);
 }
 
-/* Footer */
-footer {
-    border-top: 1px solid var(--border-color);
-    padding: 40px 0;
-    margin-top: 80px;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    text-align: center;
-    background: var(--bg-card);
-}
-
 /* =========================================
    Dark Mode Override (True Grey/Black)
    ========================================= */
 body.dark-mode {
-    --bg-main: #121212;         /* Pure dark grey/black background */
-    --bg-card: #1e1e1e;         /* Elevated neutral grey for cards */
+    --bg-main: #121212;
+    --bg-card: #1e1e1e;
     --border-color: #333333;
     --border-hover: #444444;
     --text-primary: #e8eaed;
@@ -511,7 +680,7 @@ body.dark-mode {
     --btn-primary: #333333;
     --btn-primary-hover: #4d4d4d;
 
-    --bg-input: #2b2b2b;
+    --bg-input: #262626;
     --bg-input-focus: #121212;
     --btn-tab: #1e1e1e;
     --btn-tab-hover: #2b2b2b;
@@ -521,7 +690,6 @@ body.dark-mode header {
     background: rgba(18, 18, 18, 0.95);
 }
 
-/* Keep the logo white, match the border to dark mode, NO inversion */
 body.dark-mode .brand-logo,
 body.dark-mode .splash-logo {
     background-color: #ffffff;
@@ -529,28 +697,24 @@ body.dark-mode .splash-logo {
     filter: none;
 }
 
-
 /* =========================================
    Mobile Responsiveness
    ========================================= */
 @media (max-width: 768px) {
-    /* ---- Mobile header / nav ---- */
     .nav-wrap {
         flex-direction: column;
         height: auto;
-        padding: 10px 16px 8px;
-        gap: 8px;
-    }
-
-    .brand {
-        font-size: 1rem;
-        letter-spacing: 0.12em;
+        padding: 12px 16px;
         gap: 10px;
     }
 
+    .brand {
+        font-size: 1.05rem;
+    }
+
     .brand-logo {
-        height: 38px;
-        width: 38px;
+        height: 40px;
+        width: 40px;
     }
 
     nav {
@@ -562,33 +726,17 @@ body.dark-mode .splash-logo {
     nav ul {
         width: 100%;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 6px;
+        justify-content: center;
+        gap: 12px;
     }
 
     nav a {
-        font-size: 0.85rem;
-        padding: 6px 8px;
-        display: inline-block;
-    }
-
-    /* Contact: outlined instead of solid, so it doesn't look "selected" */
-    .btn-nav {
-        padding: 6px 14px !important;
-        background-color: transparent !important;
-        color: var(--text-primary) !important;
-        border: 1px solid var(--text-secondary) !important;
-    }
-
-    .btn-nav:hover,
-    .btn-nav.active {
-        background-color: var(--btn-primary) !important;
-        color: #ffffff !important;
-        border-color: var(--btn-primary) !important;
+        font-size: 0.9rem;
+        padding: 6px 10px;
     }
 
     .hero {
-        padding: 40px 0 90px;
+        padding: 48px 0 96px;
     }
 
     .hero h1 {
@@ -610,7 +758,6 @@ body.dark-mode .splash-logo {
 
     .btn {
         width: 100%;
-        text-align: center;
     }
 
     .hero .social-links {
@@ -619,14 +766,15 @@ body.dark-mode .splash-logo {
     }
 
     .scroll-arrow {
-        bottom: 20px;
+        bottom: 18px;
     }
 
+    .grid-2,
     .grid-3,
     .contact-grid,
     .form-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 20px;
     }
 
     .form-group.full {
@@ -634,38 +782,11 @@ body.dark-mode .splash-logo {
     }
 
     .section {
-        padding: 50px 0;
+        padding: 48px 0;
     }
 
     .card {
         padding: 24px;
-    }
-
-    /* ---- Mobile: lead with the Export Process ---- */
-    #main-content {
-        display: flex;
-        flex-direction: column;
-        scroll-margin-top: 90px;   /* keeps the heading clear of the sticky header */
-    }
-
-    #process  { order: 1; }
-    #services { order: 2; border-top: 1px solid var(--border-color); }
-
-    .process-section .section-head {
-        margin-bottom: 28px;
-    }
-
-    .process-grid {
-        gap: 14px;
-    }
-
-    .process-grid .card {
-        padding: 20px;
-    }
-
-    .process-grid .card h3 {
-        font-size: 1.1rem;
-        margin-bottom: 8px;
     }
 
     .tab-nav {

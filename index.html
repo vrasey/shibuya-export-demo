@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shibuya Export | Japanese Vehicle Sourcing</title>
+    <title>Shibuya Export | Your Buyer's Agent Inside Japan's Car Auctions</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        html { scroll-behavior: smooth; }
-    </style>
 </head>
 <body>
 
@@ -26,12 +23,10 @@
             <ul>
                 <li><a href="index.html" class="active">Overview</a></li>
                 <li><a href="sourcing.html">Sourcing</a></li>
-                <li><a href="past-work.html">Past Exports</a></li>
+                <!-- Past Exports hidden until 4 real cars are ready -->
                 <li><a href="contact.html" class="btn-nav">Contact</a></li>
                 <li>
-                    <button id="theme-toggle" aria-label="Toggle Dark Mode" style="background: transparent; border: none; font-size: 1.2rem; cursor: pointer; padding: 4px;">
-                        🌗
-                    </button>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">🌗</button>
                 </li>
             </ul>
         </nav>
@@ -41,31 +36,31 @@
 <!-- Fix 1: Hero -->
 <section class="hero">
     <div class="container">
-        <span class="badge">Tokyo • Japanese Auctions & Dealers • Port to Port</span>
+        <span class="badge">Tokyo • Japanese Auctions &amp; Dealers • Port to Port</span>
         <h1>Your Buyer's Agent Inside<br>Japan's Car Auctions</h1>
-        <p>We find the car, inspect it in person, and bid from five years of real Tokyo auction results. Then our export partner ships it to your port. Every cost is listed upfront[cite: 48].</p>
+        <p>We find the car, inspect it in person, and bid from five years of real Tokyo auction results. Then our export partner ships it to your port. Every cost is listed upfront.</p>
 
         <div class="hero-actions">
             <a href="sourcing.html" class="btn btn-primary">Request a Vehicle</a>
             <a href="mailto:sales@shibuyaexport.com" class="btn btn-secondary">Email Us Directly</a>
-            <a href="https://wa.me/817085243763" target="_blank" class="btn btn-secondary">WhatsApp Us</a>
+            <a href="https://wa.me/817085243763" target="_blank" rel="noopener" class="btn btn-secondary">WhatsApp Us</a>
         </div>
 
         <!-- Hero Social Icons -->
         <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61593791369070" target="_blank" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                </svg>
-            </a>
-            <a href="https://www.instagram.com/shibuyaexport/" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/shibuyaexport/" target="_blank" rel="noopener" aria-label="Instagram">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
             </a>
-            <a href="https://wa.me/817085243763" target="_blank" aria-label="WhatsApp">
+            <a href="https://www.facebook.com/profile.php?id=61593791369070" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </a>
+            <a href="https://wa.me/817085243763" target="_blank" rel="noopener" aria-label="WhatsApp">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                 </svg>
@@ -79,184 +74,204 @@
             <polyline points="7 6 12 11 17 6"></polyline>
         </svg>
     </a>
-</main>
+</section>
 
 <main id="main-content">
-    <!-- Fix 2: Our Services (4 Cards) -->
+
+    <!-- Fix 2: Our Services (2x2 Grid on Desktop, 1 Col on Mobile) -->
     <section id="services" class="section">
         <div class="container">
             <div class="section-head">
                 <h2>Our Services</h2>
-                <p>Your eyes and hands in Japan's car markets[cite: 48].</p>
+                <p>Your eyes and hands in Japan's car markets.</p>
             </div>
 
-            <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
+            <div class="grid-2">
                 <div class="card">
                     <h3>Auction Bidding</h3>
-                    <p>Japan's car auctions, including USS, TAA and CAA, are dealer-only, so overseas buyers can't get in. We bid for you. You get the translated auction sheet (the Japanese original on request) and a recommended max bid based on five years of final auction prices from Tokyo. We never bid above the limit you approve[cite: 48].</p>
+                    <p>Japan's car auctions, including USS, TAA and CAA, are dealer-only, so overseas buyers can't get in. We bid for you. You get the translated auction sheet (the Japanese original on request) and a recommended max bid based on five years of final auction prices from Tokyo. We never bid above the limit you approve.</p>
                 </div>
                 <div class="card">
                     <h3>Dealer Sourcing</h3>
-                    <p>Some cars rarely come up at auction. For those we go straight to Japanese dealerships. We flag the car and call ahead once you confirm interest. Then we inspect it, and we only start negotiating if it matches the description[cite: 48].</p>
+                    <p>Some cars rarely come up at auction. For those we go straight to Japanese dealerships. We flag the car and call ahead once you confirm interest. Then we inspect it, and we only start negotiating if it matches the description.</p>
                 </div>
                 <div class="card">
                     <h3>Physical Inspection</h3>
-                    <p>Our team or one of our specialists inspects the car in person. That includes 3 to 5 paint gauge readings per panel, photos and a video call. Auction cars can only be inspected on auction day, usually about 4 hours before the lot runs. Inspection is covered by our commission[cite: 48].</p>
+                    <p>Our team or one of our specialists inspects the car in person. That includes 3 to 5 paint gauge readings per panel, photos and a video call. Auction cars can only be inspected on auction day, usually about 4 hours before the lot runs. Inspection is covered by our commission.</p>
                 </div>
                 <div class="card">
-                    <h3>Export & Shipping</h3>
-                    <p>Our partner export company handles de-registration (抹消登録), export certificates, and Ro-Ro or container booking. The service is port to port. Customs, duty and taxes at your end are paid by you[cite: 48].</p>
+                    <h3>Export &amp; Shipping</h3>
+                    <p>Our partner export company handles de-registration (抹消登録), export certificates, and Ro-Ro or container booking. The service is port to port. Customs, duty and taxes at your end are paid by you.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fix 4: Pricing (Placed after Our Services per spec) -->
+    <section id="pricing" class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <h2>Pricing</h2>
+                <p>Everything is on one itemized invoice: the car, purchase handling, service fee, commission, FOB and ocean freight to your port.</p>
+            </div>
+
+            <div class="card" style="max-width: 860px; margin: 0 auto;">
+                <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 8px;">
+                    Purchase handling: 4% of the car's final purchase price &nbsp;&middot;&nbsp; Service fee: 1% of the car's final purchase price
+                </p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Car price (USD)</th>
+                            <th class="right">Commission</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Up to $20,000</td><td class="right">$1,250</td></tr>
+                        <tr><td>$20,001–30,000</td><td class="right">$1,750</td></tr>
+                        <tr><td>$30,001–40,000</td><td class="right">$2,450</td></tr>
+                        <tr><td>$40,001–89,999</td><td class="right">$2,950</td></tr>
+                        <tr><td>$90,000–149,999</td><td class="right">$6,500</td></tr>
+                        <tr><td>$150,000–249,999</td><td class="right">$9,000</td></tr>
+                        <tr><td>$250,000 and over</td><td class="right">Negotiated</td></tr>
+                    </tbody>
+                </table>
+
+                <p style="margin-bottom: 12px;"><strong>Included in the commission:</strong> in-person inspection with paint gauge readings, translated auction sheet, recommended max bid based on real auction results, video call, and bidding on your behalf.</p>
+                <p style="margin-bottom: 12px;"><strong>FOB: $1,600 per car.</strong> Covers auction fees, inland transport to port, de-registration and export customs clearance.</p>
+                <p style="margin-bottom: 28px;"><strong>Ocean freight:</strong> quoted for your port. Rates change with the market, and your exact rate is confirmed when the car is booked. RoRo or container, your choice.</p>
+
+                <h3 style="margin-bottom: 8px;">Example: $30,000 car to Baltimore, USA</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th class="right">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Car</td><td class="right">$30,000</td></tr>
+                        <tr><td>Purchase handling (4%)</td><td class="right">$1,200</td></tr>
+                        <tr><td>Service fee (1%)</td><td class="right">$300</td></tr>
+                        <tr><td>Commission</td><td class="right">$1,750</td></tr>
+                        <tr><td>FOB</td><td class="right">$1,600</td></tr>
+                        <tr><td>Ocean freight</td><td class="right">~$2,400</td></tr>
+                        <tr class="total-row"><td>Total to port</td><td class="right">~$37,250</td></tr>
+                    </tbody>
+                </table>
+
+                <p style="margin-bottom: 6px;">Port to port service. Destination customs, duty and taxes are paid by the buyer.</p>
+                <p><strong>Dealers and trade partners:</strong> ask about trade terms.</p>
             </div>
         </div>
     </section>
 
     <!-- Fix 3: Export Process (6 Steps) -->
-    <section id="process" class="section" style="background: var(--bg-card); border-top: 1px solid var(--border-color);">
+    <section id="process" class="section">
         <div class="container">
             <div class="section-head">
-                <h2>The Export Process</h2>
+                <h2>Export Process</h2>
                 <p>A transparent, step-by-step breakdown of how we secure and ship your vehicle.</p>
             </div>
 
             <div class="grid-3">
-                <div class="card" style="background: var(--bg-main);">
+                <div class="card">
                     <h3>1. Pick a car</h3>
-                    <p>Choose an auction lot or a dealer listing. We check it and give you a recommended max bid based on real auction results[cite: 48].</p>
+                    <p>Choose an auction lot or a dealer listing. We check it and give you a recommended max bid based on real auction results.</p>
                 </div>
-                <div class="card" style="background: var(--bg-main);">
+                <div class="card">
                     <h3>2. Agree the plan</h3>
-                    <p>We have a quick call before auction day to agree the expected price and your max bid[cite: 48].</p>
+                    <p>We have a quick call before auction day to agree the expected price and your max bid.</p>
                 </div>
-                <div class="card" style="background: var(--bg-main);">
+                <div class="card">
                     <h3>3. Secure your bid</h3>
-                    <p>You pay a 10% deposit of your max bid on a refundable invoice. Bidding starts once the deposit is confirmed. The deposit is refunded if we don't win, but kept if the car is won and the balance isn't paid within 3 days[cite: 48].</p>
+                    <p>You pay a 10% deposit of your max bid on a refundable invoice. Bidding starts once the deposit is confirmed. The deposit is refunded if we don't win, but kept if the car is won and the balance isn't paid within 3 days.</p>
                 </div>
-                <div class="card" style="background: var(--bg-main);">
+                <div class="card">
                     <h3>4. We bid or buy</h3>
-                    <p>If we don't win the car, or a dealer car sells first, your deposit is refunded in full to the account it came from[cite: 48].</p>
+                    <p>If we don't win the car, or a dealer car sells first, your deposit is refunded in full to the account it came from.</p>
                 </div>
-                <div class="card" style="background: var(--bg-main);">
+                <div class="card">
                     <h3>5. Pay the balance</h3>
-                    <p>Once the car is won, you send the balance to our partner export company's holding account within 3 days[cite: 48].</p>
+                    <p>Once the car is won, you send the balance to our partner export company's holding account within 3 days.</p>
                 </div>
-                <div class="card" style="background: var(--bg-main);">
+                <div class="card">
                     <h3>6. Ship</h3>
-                    <p>We arrange the paperwork, transport inside Japan and the booking. You get one itemized invoice, plus vessel details and an arrival estimate[cite: 48].</p>
+                    <p>We arrange the paperwork, transport inside Japan and the booking. You get one itemized invoice, plus vessel details and an arrival estimate.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Fix 4: Pricing Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-head">
-                <h2>Pricing</h2>
-                <p>Everything is on one itemized invoice: the car, purchase handling, service fee, commission, FOB and ocean freight to your port[cite: 48].</p>
-            </div>
-
-            <div class="card" style="max-width: 850px; margin: 0 auto;">
-                <p style="margin-bottom: 16px;"><strong>Purchase handling:</strong> 4% of the car's final purchase price | <strong>Service fee:</strong> 1% of the car's final purchase price[cite: 48]</p>
-                <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;">
-                    <thead>
-                        <tr style="border-bottom: 2px solid var(--border-color); text-align: left;">
-                            <th style="padding: 10px;">Car price (USD)</th>
-                            <th style="padding: 10px;">Commission</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">Up to $20,000</td><td style="padding: 10px;">$1,250</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">$20,001–30,000</td><td style="padding: 10px;">$1,750</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">$30,001–40,000</td><td style="padding: 10px;">$2,450</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">$40,001–89,999</td><td style="padding: 10px;">$2,950</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">$90,000–149,999</td><td style="padding: 10px;">$6,500</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">$150,000–249,999</td><td style="padding: 10px;">$9,000</td></tr>
-                        <tr><td style="padding: 10px;">$250,000 and over</td><td style="padding: 10px;">Negotiated[cite: 48]</td></tr>
-                    </tbody>
-                </table>
-                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;"><strong>Included in the commission:</strong> in-person inspection with paint gauge readings, translated auction sheet, recommended max bid based on real auction results, video call, and bidding on your behalf[cite: 48].</p>
-                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;"><strong>FOB ($1,600 per car):</strong> Covers auction fees, inland transport to port, de-registration and export customs clearance[cite: 48].</p>
-                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;"><strong>Ocean freight:</strong> Quoted for your port. Rates change with the market, and your exact rate is confirmed when the car is booked. RoRo or container, your choice[cite: 48].</p>
-                
-                <h4 style="margin-bottom: 12px; color: var(--text-primary);">Example: $30,000 car to Baltimore, USA</h4>
-                <table style="width: 100%; border-collapse: collapse;">
-                    <tbody>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;">Car</td><td style="padding: 8px; text-align: right;">$30,000</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;">Purchase handling (4%)</td><td style="padding: 8px; text-align: right;">$1,200</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;">Service fee (1%)</td><td style="padding: 8px; text-align: right;">$300</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;">Commission</td><td style="padding: 8px; text-align: right;">$1,750</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;">FOB</td><td style="padding: 8px; text-align: right;">$1,600</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 8px;">Ocean freight</td><td style="padding: 8px; text-align: right;">~$2,400</td></tr>
-                        <tr style="font-weight: bold;"><td style="padding: 10px;">Total to port</td><td style="padding: 10px; text-align: right;">~$37,250</td></tr>
-                    </tbody>
-                </table>
-                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 16px;">Port to port service. Destination customs, duty and taxes are paid by the buyer. Dealers and trade partners: ask about trade terms[cite: 48].</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Fix 5 & 6: Where We Ship & US Military Line -->
-    <section class="section" style="background: var(--bg-card); border-top: 1px solid var(--border-color);">
+    <!-- Fix 5 & Fix 6: Where We Ship & US Military Line -->
+    <section id="shipping" class="section section-alt">
         <div class="container">
             <div class="section-head">
                 <h2>Where We Ship</h2>
-                <p>Estimated sea times from departure in Japan[cite: 48].</p>
+                <p>Transit times are sea time from departure in Japan and depend on vessel schedules.</p>
             </div>
 
-            <div class="card" style="max-width: 700px; margin: 0 auto 30px auto; background: var(--bg-main);">
-                <table style="width: 100%; border-collapse: collapse;">
+            <div class="card" style="max-width: 760px; margin: 0 auto 28px;">
+                <table class="data-table" style="margin-top: 0;">
                     <thead>
-                        <tr style="border-bottom: 2px solid var(--border-color); text-align: left;">
-                            <th style="padding: 10px;">Destination</th>
-                            <th style="padding: 10px;">Estimated Transit</th>
+                        <tr>
+                            <th>Destination</th>
+                            <th class="right">Estimated Transit</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">Hong Kong</td><td style="padding: 10px;">~7 days[cite: 48]</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">Australia</td><td style="padding: 10px;">~15 days[cite: 48]</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">US West Coast</td><td style="padding: 10px;">~15 days[cite: 48]</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">Dubai (UAE)</td><td style="padding: 10px;">~25 days[cite: 48]</td></tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);"><td style="padding: 10px;">US East Coast (Baltimore, Newport RI)</td><td style="padding: 10px;">~30 days[cite: 48]</td></tr>
-                        <tr><td style="padding: 10px;">Central Asia & Europe</td><td style="padding: 10px;">Quoted per route[cite: 48]</td></tr>
+                        <tr><td>Hong Kong</td><td class="right">~7 days</td></tr>
+                        <tr><td>Australia</td><td class="right">~15 days</td></tr>
+                        <tr><td>US West Coast</td><td class="right">~15 days</td></tr>
+                        <tr><td>Dubai (UAE)</td><td class="right">~25 days</td></tr>
+                        <tr><td>US East Coast (Baltimore, Newport RI)</td><td class="right">~30 days</td></tr>
+                        <tr><td>Central Asia &amp; Europe</td><td class="right">Quoted per route</td></tr>
                     </tbody>
                 </table>
-                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 16px;">Transit times are sea time from departure in Japan and depend on vessel schedules. Your exact sailing date and estimated arrival are confirmed once the car is booked[cite: 48].</p>
+                <p style="font-size: 0.9rem;">Transit times are sea time from departure in Japan and depend on vessel schedules. Your exact sailing date and estimated arrival are confirmed once the car is booked.</p>
             </div>
 
-            <div class="card" style="max-width: 700px; margin: 0 auto; background: var(--bg-main); text-align: center;">
-                <h3 style="margin-bottom: 8px;">Serving US Military on Okinawa</h3>
-                <p>We help service members stationed on Okinawa buy cars straight from Japanese auctions, with a team that regularly visits the island[cite: 48].</p>
+            <!-- Fix 6: US Military Line -->
+            <div class="card" style="max-width: 760px; margin: 0 auto; text-align: center;">
+                <h3 style="margin-bottom: 8px;">Serving US military on Okinawa.</h3>
+                <p>We help service members stationed on Okinawa buy cars straight from Japanese auctions, with a team that regularly visits the island.</p>
             </div>
         </div>
     </section>
+
 </main>
 
 <!-- Fix 12: Footer -->
 <footer>
     <div class="container">
-        <p><strong>Shibuya Export</strong> — Your eyes and hands in Japan's car markets[cite: 48].</p>
-        <p style="margin-top: 6px;">WhatsApp: +81 70 8524 3763 | Email: sales@shibuyaexport.com[cite: 48]</p>
+        <p class="footer-brand">Shibuya Export — Your eyes and hands in Japan's car markets.</p>
+        <p class="footer-links">
+            WhatsApp: <a href="https://wa.me/817085243763" target="_blank" rel="noopener">+81 70 8524 3763</a> &nbsp;&middot;&nbsp;
+            Email: <a href="mailto:sales@shibuyaexport.com">sales@shibuyaexport.com</a>
+        </p>
+
         <div class="social-links">
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                </svg>
-            </a>
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/shibuyaexport/" target="_blank" rel="noopener" aria-label="Instagram">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
             </a>
-            <a href="https://wa.me/817085243763" target="_blank" aria-label="WhatsApp">
+            <a href="https://www.facebook.com/profile.php?id=61593791369070" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </a>
+            <a href="https://wa.me/817085243763" target="_blank" rel="noopener" aria-label="WhatsApp">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                 </svg>
             </a>
         </div>
-        <p style="margin-top: 16px; font-size: 0.8rem;">&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan[cite: 48].</p>
+
+        <p>&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan.</p>
     </div>
 </footer>
 
@@ -274,17 +289,11 @@
         }
     });
 
-    document.querySelector('.scroll-arrow').addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.getElementById('main-content');
-        const margin = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
-        const endY = target.getBoundingClientRect().top + window.scrollY - margin;
-        window.scrollTo({ top: endY, behavior: 'smooth' });
-    });
-
     const toggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
-    if (localStorage.getItem('theme') === 'dark') { body.classList.add('dark-mode'); }
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+    }
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
