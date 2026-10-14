@@ -410,6 +410,25 @@ nav a.active, nav a:hover {
     height: 100%;
 }
 
+/* Table block fills the column so both tables end at the same height */
+.equal-col > div:first-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.equal-col > div:first-child .data-table {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Keep the two table headers on the same line (left intro wraps to 2 lines) */
+@media (min-width: 769px) {
+    .equal-col > div:first-child > p {
+        min-height: 3.2em;
+    }
+}
+
 .data-table {
     width: 100%;
     border-collapse: collapse;

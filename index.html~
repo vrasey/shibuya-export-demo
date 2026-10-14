@@ -159,10 +159,10 @@
                     <p>We help service members stationed on Okinawa buy cars straight from Japanese auctions, with a team that regularly visits the island.</p>
                 </div>
 
-                <!-- Row 2: Pricing (Left) & Ship Times (Right) balanced evenly -->
-                <div class="grid-2" style="align-items: stretch; margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--border-color);">
+<!-- Row 2: Pricing (Left) & Ship Times (Right) -->
+                <div class="pricing-split-grid">
                     
-                    <!-- Left Column: Pricing Table -->
+                    <!-- Left Column: Pricing Table & Commission Notes -->
                     <div class="equal-col">
                         <div>
                             <h3>Pricing</h3>
@@ -189,7 +189,7 @@
                             </table>
                         </div>
 
-                        <div>
+                        <div style="margin-top: auto; padding-top: 16px;">
                             <p style="margin-bottom: 10px;"><strong>Included in the commission:</strong> in-person inspection with paint gauge readings, translated auction sheet, recommended max bid based on real auction results, video call, and bidding on your behalf.</p>
                             <p style="margin-bottom: 10px;"><strong>FOB: $1,600 per car.</strong> Covers auction fees, inland transport to port, de-registration and export customs clearance.</p>
                             <p><strong>Ocean freight:</strong> quoted for your port. Rates change with the market, and your exact rate is confirmed when the car is booked. RoRo or container, your choice.</p>
@@ -222,7 +222,7 @@
                             </table>
                         </div>
 
-                        <div>
+                        <div style="margin-top: auto; padding-top: 16px;">
                             <p>Transit times are sea time from departure in Japan and depend on vessel schedules. Your exact sailing date and estimated arrival are confirmed once the car is booked.</p>
                         </div>
                     </div>
