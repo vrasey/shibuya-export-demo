@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shibuya Export</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrap">
+        <a href="index.html" class="brand">
+            <img src="logo.png" alt="Shibuya Export Logo" class="brand-logo">
+            Shibuya Export
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="sourcing.html">Sourcing</a></li>
+                <li><a href="past-work.html">Past Exports</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode" style="background: transparent; border: none; font-size: 1.2rem; cursor: pointer; padding: 4px;">
+                        🌗
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Get in Touch</h2>
+            <p>Send a general inquiry or consult on procurement logistics.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="card">
+                <form action="mailto:sales@shibuyaexport.com" method="POST" enctype="text/plain">
+                    <div class="form-group full">
+                        <label>Your Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group full">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group full">
+                        <label>Inquiry Details</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; margin-top: 10px;">Send Message</button>
+                </form>
+            </div>
+
+            <div class="card" style="background: var(--bg-main); border: none;">
+                <h3 style="margin-bottom: 24px;">Office Details</h3>
+
+                <div style="margin-bottom: 24px;">
+                    <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase;">Location</p>
+                    <p style="font-size: 1.05rem; color: var(--text-primary); font-weight: 500;">Shibuya-ku, Tokyo, Japan</p>
+                </div>
+                <div style="margin-bottom: 24px;">
+                    <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase;">Business Hours</p>
+                    <p style="font-size: 1.05rem; color: var(--text-primary); font-weight: 500;">Mon – Fri: 09:00 – 18:00 (JST)</p>
+                </div>
+                <div style="margin-bottom: 24px;">
+                    <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase;">General Email</p>
+                    <p style="font-size: 1.05rem; color: var(--text-primary); font-weight: 500;">sales@shibuyaexport.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan.</p>
+    </div>
+</footer>
+
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+
+</body>
+</html>

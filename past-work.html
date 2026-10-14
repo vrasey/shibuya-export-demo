@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Exports | Shibuya Export</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrap">
+        <a href="index.html" class="brand">
+            <img src="logo.png" alt="Shibuya Export Logo" class="brand-logo">
+            Shibuya Export
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="sourcing.html">Sourcing</a></li>
+                <li><a href="past-work.html" class="active">Past Exports</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode" style="background: transparent; border: none; font-size: 1.2rem; cursor: pointer; padding: 4px;">
+                        🌗
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Previously Exported Vehicles</h2>
+            <p>An archive of vehicles sourced, inspected, and shipped to overseas clients.</p>
+        </div>
+
+        <div class="grid-3">
+            <!-- Sold Car 1 -->
+            <div class="work-card">
+                <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#64748b;font-size:0.95rem;text-transform:uppercase;">
+                    Sold car placeholder
+                </div>
+                <div class="work-content">
+                    <span class="work-tag">Exported • Ro-Ro</span>
+                    <h3 style="margin: 8px 0;">Sold car placeholder</h3>
+                    <p>Auction sourced, inspected, deregistered, and shipped to destination port.</p>
+                </div>
+            </div>
+
+            <!-- Sold Car 2 -->
+            <div class="work-card">
+                <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#64748b;font-size:0.95rem;text-transform:uppercase;">
+                    Sold car placeholder
+                </div>
+                <div class="work-content">
+                    <span class="work-tag">Exported • Container</span>
+                    <h3 style="margin: 8px 0;">Sold car placeholder</h3>
+                    <p>Auction sourced, inspected, deregistered, and shipped to destination port.</p>
+                </div>
+            </div>
+
+            <!-- Sold Car 3 -->
+            <div class="work-card">
+                <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#64748b;font-size:0.95rem;text-transform:uppercase;">
+                    Sold car placeholder
+                </div>
+                <div class="work-content">
+                    <span class="work-tag">Exported • Ro-Ro</span>
+                    <h3 style="margin: 8px 0;">Sold car placeholder</h3>
+                    <p>Auction sourced, inspected, deregistered, and shipped to destination port.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan.</p>
+    </div>
+</footer>
+
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Shibuya Export</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Shibuya Export Logo" class="brand-logo">
+        Shibuya Export
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="past-work.html">Previous Work</a></li>
+          <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Get in Touch</h2>
+        <p>Send an export inquiry or consult on procurement logistics.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="card">
+          <form action="mailto:info@shibuyaexport.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="name@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="destination">Destination Country</label>
+              <input type="text" id="destination" name="destination" placeholder="e.g. United States, Australia">
+            </div>
+            <div class="form-group">
+              <label for="message">Inquiry Details</label>
+              <textarea id="message" name="message" rows="5" placeholder="Specify items, estimated timeframe, or export requirements..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="border:none;cursor:pointer;width:100%;">Send Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Official Info Box -->
+        <div class="contact-info-box">
+          <h3 style="margin-bottom: 24px;">Office & Registered Details</h3>
+          
+          <div class="info-item">
+            <h4>Location</h4>
+            <p>Shibuya-ku, Tokyo, Japan</p>
+          </div>
+          <div class="info-item">
+            <h4>Business Hours</h4>
+            <p>Mon – Fri: 09:00 – 18:00 (JST)</p>
+          </div>
+          <div class="info-item">
+            <h4>General Email</h4>
+            <p>inquiry@shibuyaexport.com</p>
+          </div>
+          <div class="info-item">
+            <h4>Trade Status</h4>
+            <p>Licensed Japanese Domestic & International Exporter</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

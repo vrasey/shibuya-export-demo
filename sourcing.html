@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Sourcing | Shibuya Export</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrap">
+        <a href="index.html" class="brand">
+            <img src="logo.png" alt="Shibuya Export Logo" class="brand-logo">
+            Shibuya Export
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="sourcing.html" class="active">Sourcing</a></li>
+                <li><a href="past-work.html">Past Exports</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode" style="background: transparent; border: none; font-size: 1.2rem; cursor: pointer; padding: 4px;">
+                        🌗
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Find Your Vehicle</h2>
+            <p>Request a specific model from the auctions, or browse our curated dealer network listings.</p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-btn active" onclick="switchTab('auction', this)">Auction Request</button>
+            <button class="tab-btn" onclick="switchTab('dealer', this)">Dealer Listings</button>
+        </div>
+
+        <!-- Tab 1: Auction Request Form -->
+        <div id="auction" class="tab-content active">
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <form action="mailto:sales@shibuyaexport.com" method="POST" enctype="text/plain">
+                    <div class="form-grid">
+
+                        <!-- Client Info -->
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="Email" required>
+                        </div>
+                        <div class="form-group full">
+                            <label>Destination Port / Country</label>
+                            <input type="text" name="Destination" placeholder="e.g., Long Beach, USA" required>
+                        </div>
+
+                        <!-- Vehicle Info -->
+                        <div class="form-group">
+                            <label>Vehicle Make & Model</label>
+                            <input type="text" name="Vehicle" placeholder="e.g., Toyota Supra RZ" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Year(s)</label>
+                            <input type="text" name="Year" placeholder="e.g., 1993 - 1998">
+                        </div>
+                        <div class="form-group">
+                            <label>Transmission</label>
+                            <select name="Transmission">
+                                <option>Any</option>
+                                <option>Manual Only</option>
+                                <option>Automatic Only</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Maximum Budget (FOB or Landed)</label>
+                            <input type="text" name="Budget" placeholder="e.g., $35,000 USD" required>
+                        </div>
+
+                        <!-- Preferences -->
+                        <div class="form-group full">
+                            <label>Condition & Color Preferences</label>
+                            <input type="text" name="Preferences" placeholder="e.g., Grade 4+, No white, Stock engine only">
+                        </div>
+                        <div class="form-group full">
+                            <label>Additional Notes / Specific Auction Lots</label>
+                            <textarea name="Notes" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group full" style="margin-top: 10px;">
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Auction Request</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tab 2: Dealer Listings (Manual Grid) -->
+        <div id="dealer" class="tab-content">
+            <div class="grid-3">
+
+                <!-- Listing 1 -->
+                <div class="work-card">
+                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">
+                        [Car Image Placeholder]
+                    </div>
+                    <div class="work-content">
+                        <span class="work-tag" style="color: var(--text-secondary);">Goo-Net Verified</span>
+                        <h3 style="margin: 8px 0;">1999 Nissan Silvia S15 Spec-R</h3>
+                        <!-- FIXED: Removed hardcoded inline color #1e293b that was hiding the price in dark mode -->
+                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-size: 1.1rem;">¥3,850,000 JPY</p>
+                        <p style="margin-bottom: 16px;">6-Speed Manual. 82,000km. Grade 4 condition.</p>
+                        <a href="mailto:sales@shibuyaexport.com?subject=Inquiry: 1999 Silvia S15" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Inquire About Vehicle</a>
+                    </div>
+                </div>
+
+                <!-- Listing 2 -->
+                <div class="work-card">
+                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">
+                        [Car Image Placeholder]
+                    </div>
+                    <div class="work-content">
+                        <span class="work-tag" style="color: var(--text-secondary);">Dealer Stock</span>
+                        <h3 style="margin: 8px 0;">2001 Honda S2000 AP1</h3>
+                        <!-- FIXED: Removed hardcoded inline color #1e293b -->
+                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-size: 1.1rem;">¥2,900,000 JPY</p>
+                        <p style="margin-bottom: 16px;">6-Speed Manual. 104,000km. Clean title, no rust.</p>
+                        <a href="mailto:sales@shibuyaexport.com?subject=Inquiry: 2001 S2000" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Inquire About Vehicle</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan.</p>
+    </div>
+</footer>
+
+<script>
+    function switchTab(tabId, btnElement) {
+        document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+
+        document.getElementById(tabId).classList.add('active');
+        btnElement.classList.add('active');
+    }
+
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+
+</body>
+</html>

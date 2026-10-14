@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shibuya Export | Japanese Vehicle Sourcing</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Shibuya Export Logo" class="brand-logo">
+        Shibuya Export
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Overview</a></li>
+          <li><a href="sourcing.html">Sourcing</a></li>
+          <li><a href="past-work.html">Past Exports</a></li>
+          <li><a href="contact.html" class="btn-nav">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Tokyo • Direct Auctions • Global Ro-Ro</span>
+      <h1>Precision Vehicle Exporting<br>Direct From Japan.</h1>
+      <p>Specialized sourcing, physical inspection, and global delivery for overseas buyers. Professional automotive logistics handled from start to finish.</p>
+      <div class="hero-actions">
+        <a href="sourcing.html" class="btn btn-primary">Request a Vehicle</a>
+        <a href="mailto:sales@shibuyaexport.com" class="btn btn-secondary" style="border: none;">Email Us Directly</a>
+      </div>
+      <!-- Hero Social Icons -->
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>  
+    </div>
+    
+    <!-- Bouncing Double Chevron Arrow -->
+    <a href="#services" class="scroll-arrow" aria-label="Scroll to services">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="7 13 12 18 17 13"></polyline>
+        <polyline points="7 6 12 11 17 6"></polyline>
+      </svg>
+    </a>
+  </section>
+
+  <!-- Export Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Export Services</h2>
+        <p>Reliable channels connecting Japanese vehicle markets to international destinations.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Auction Bidding</h3>
+          <p>Direct access to USS, TAA, and CAA auctions across Japan. We translate sheets, monitor lots, and bid strictly to your limits.</p>
+        </div>
+        <div class="card">
+          <h3>Physical Inspection</h3>
+          <p>Detailed verification, structural grading, and extensive photo documentation at our holding facilities prior to export.</p>
+        </div>
+        <div class="card">
+          <h3>Customs & Shipping</h3>
+          <p>Complete handling of de-registration (抹消登録), export certificates, customs compliance, and Ro-Ro or container vessel booking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Process -->
+  <section class="section" style="background: #ffffff; border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-head">
+        <h2>The Export Process</h2>
+        <p>A transparent, step-by-step breakdown of how we secure and ship your vehicle.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card" style="background: var(--bg-main);">
+          <h3>1. Select your vehicle</h3>
+          <p>Choose a car from a Japanese dealer listing. We contact the dealer to confirm availability, verify the condition and history, and check the price against current market value.</p>
+        </div>
+        
+        <div class="card" style="background: var(--bg-main);">
+          <h3>2. Invoice and full payment</h3>
+          <p>Once you confirm the vehicle, we issue an invoice for the full amount upfront. Payment goes directly to the bank account of our partner shipping and export company, keeping the transaction smooth and secure.</p>
+        </div>
+        
+        <div class="card" style="background: var(--bg-main);">
+          <h3>3. We secure the vehicle</h3>
+          <p>After your transfer is confirmed, we complete the purchase with the dealer and secure the car in your name. If the vehicle is sold before we can secure it, your funds are returned in full to the account they came from.</p>
+        </div>
+        
+        <div class="card" style="background: var(--bg-main);">
+          <h3>4. Purchase confirmed</h3>
+          <p>With funds already in place, we move straight into export: documentation, inland transport, and shipping arrangements.</p>
+        </div>
+        
+        <div class="card" style="background: var(--bg-main);">
+          <h3>5. Your vehicle ships</h3>
+          <p>Once the car is loaded, we send you the shipping details, vessel information, and estimated arrival at your destination port.</p>
+        </div>
+        
+        <div class="card" style="background: #f5f5f5; border: 1px dashed var(--text-secondary); display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="color: var(--text-primary); margin-bottom: 16px;">Estimated Transit Times</h3>
+          <ul style="list-style: none; padding: 0; color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+            <li style="margin-bottom: 8px; display: flex; justify-content: space-between;">
+              <span><strong>West Coast</strong></span>
+              <span>approx. 15 days</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+              <span><strong>East Coast</strong></span>
+              <span>approx. 30 days</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan.</p>
+      <footer>
+    <div class="container">
+      <p>&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan.</p>
+      
+      <!-- Footer Social Icons -->
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+  </footer>
+    </div>
+  </footer>
+
+</body>
+</html>
