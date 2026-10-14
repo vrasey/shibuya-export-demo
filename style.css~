@@ -392,14 +392,23 @@ nav a.active, nav a:hover {
     font-size: 0.95rem;
 }
 
-/* Tables (Pricing & Shipping) - Balanced Height Utility */
+/* Pricing & Shipping Equal-Height Layout */
+.pricing-split-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    align-items: stretch;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+}
+
 .equal-col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
-
 .data-table {
     width: 100%;
     border-collapse: collapse;
