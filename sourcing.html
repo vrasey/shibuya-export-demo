@@ -32,9 +32,10 @@
 
 <section class="section">
     <div class="container">
+        <!-- Fix 8 Intro -->
         <div class="section-head">
             <h2>Find Your Vehicle</h2>
-            <p>Request a specific model from the auctions, or browse our curated dealer network listings.</p>
+            <p>Tell us the car you want and we'll search the auctions and our partner dealers for you[cite: 48].</p>
         </div>
 
         <!-- Tab Navigation -->
@@ -43,13 +44,12 @@
             <button class="tab-btn" onclick="switchTab('dealer', this)">Dealer Listings</button>
         </div>
 
-        <!-- Tab 1: Auction Request Form -->
+        <!-- Fix 8: Updated Request Form -->
         <div id="auction" class="tab-content active">
             <div class="card" style="max-width: 800px; margin: 0 auto;">
                 <form action="mailto:sales@shibuyaexport.com" method="POST" enctype="text/plain">
                     <div class="form-grid">
 
-                        <!-- Client Info -->
                         <div class="form-group">
                             <label>Full Name</label>
                             <input type="text" name="Name" required>
@@ -58,12 +58,23 @@
                             <label>Email Address</label>
                             <input type="email" name="Email" required>
                         </div>
-                        <div class="form-group full">
-                            <label>Destination Port / Country</label>
-                            <input type="text" name="Destination" placeholder="e.g., Long Beach, USA" required>
+                        <div class="form-group">
+                            <label>WhatsApp Number</label>
+                            <input type="text" name="WhatsApp" placeholder="+1, +971, +852..." required>
+                        </div>
+                        <div class="form-group">
+                            <label>Nearest Port</label>
+                            <input type="text" name="NearestPort" placeholder="e.g., Long Beach, USA" required>
                         </div>
 
-                        <!-- Vehicle Info -->
+                        <div class="form-group full">
+                            <label>Purpose</label>
+                            <select name="Purpose">
+                                <option>Own Use</option>
+                                <option>Resale or Trade</option>
+                            </select>
+                        </div>
+
                         <div class="form-group">
                             <label>Vehicle Make & Model</label>
                             <input type="text" name="Vehicle" placeholder="e.g., Toyota Supra RZ" required>
@@ -71,6 +82,7 @@
                         <div class="form-group">
                             <label>Preferred Year(s)</label>
                             <input type="text" name="Year" placeholder="e.g., 1993 - 1998">
+                            <small style="color: var(--text-secondary); font-size: 0.75rem; margin-top: 4px; display: block;">US buyers: cars must be at least 25 years old to import, counted from the month and year of manufacture[cite: 48].</small>
                         </div>
                         <div class="form-group">
                             <label>Transmission</label>
@@ -81,11 +93,10 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Maximum Budget (FOB or Landed)</label>
+                            <label>Maximum Budget (USD)</label>
                             <input type="text" name="Budget" placeholder="e.g., $35,000 USD" required>
                         </div>
 
-                        <!-- Preferences -->
                         <div class="form-group full">
                             <label>Condition & Color Preferences</label>
                             <input type="text" name="Preferences" placeholder="e.g., Grade 4+, No white, Stock engine only">
@@ -96,44 +107,92 @@
                         </div>
 
                         <div class="form-group full" style="margin-top: 10px;">
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Auction Request</button>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
 
-        <!-- Tab 2: Dealer Listings (Manual Grid) -->
+        <!-- Fix 7: Dealer Listings (6 Starter Cars from Car Sensor) -->
         <div id="dealer" class="tab-content">
             <div class="grid-3">
 
-                <!-- Listing 1 -->
+                <!-- Car 1 -->
                 <div class="work-card">
-                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">
-                        [Car Image Placeholder]
-                    </div>
+                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">[Car Photo]</div>
                     <div class="work-content">
-                        <span class="work-tag" style="color: var(--text-secondary);">Goo-Net Verified</span>
-                        <h3 style="margin: 8px 0;">1999 Nissan Silvia S15 Spec-R</h3>
-                        <!-- FIXED: Removed hardcoded inline color #1e293b that was hiding the price in dark mode -->
-                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-size: 1.1rem;">¥3,850,000 JPY</p>
-                        <p style="margin-bottom: 16px;">6-Speed Manual. 82,000km. Grade 4 condition.</p>
-                        <a href="mailto:sales@shibuyaexport.com?subject=Inquiry: 1999 Silvia S15" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Inquire About Vehicle</a>
+                        <span class="work-tag" style="color: var(--text-secondary);">Dealer Stock</span>
+                        <h3 style="margin: 8px 0; font-size: 1.1rem;">2001 Nissan Skyline GT-R V-Spec II (R34)</h3>
+                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Price on request[cite: 48]</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 16px;">6-speed manual. 50,000 km. Sparkling Silver Metallic. No repair history[cite: 48].</p>
+                        <a href="https://www.carsensor.net/" target="_blank" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px; margin-bottom: 8px;">View on Car Sensor</a>
+                        <a href="https://wa.me/817085243763?text=Inquiry:%202001%20Nissan%20Skyline%20GT-R" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; padding: 10px;">Inquire on WhatsApp</a>
                     </div>
                 </div>
 
-                <!-- Listing 2 -->
+                <!-- Car 2 -->
                 <div class="work-card">
-                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">
-                        [Car Image Placeholder]
-                    </div>
+                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">[Car Photo]</div>
                     <div class="work-content">
                         <span class="work-tag" style="color: var(--text-secondary);">Dealer Stock</span>
-                        <h3 style="margin: 8px 0;">2001 Honda S2000 AP1</h3>
-                        <!-- FIXED: Removed hardcoded inline color #1e293b -->
-                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 12px; font-size: 1.1rem;">¥2,900,000 JPY</p>
-                        <p style="margin-bottom: 16px;">6-Speed Manual. 104,000km. Clean title, no rust.</p>
-                        <a href="mailto:sales@shibuyaexport.com?subject=Inquiry: 2001 S2000" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px;">Inquire About Vehicle</a>
+                        <h3 style="margin: 8px 0; font-size: 1.1rem;">1991 Honda NSX 3.0</h3>
+                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Price on request[cite: 48]</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 16px;">4-speed automatic. 58,000 km. Silver. No repair history[cite: 48].</p>
+                        <a href="https://www.carsensor.net/" target="_blank" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px; margin-bottom: 8px;">View on Car Sensor</a>
+                        <a href="https://wa.me/817085243763?text=Inquiry:%201991%20Honda%20NSX" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; padding: 10px;">Inquire on WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="work-card">
+                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">[Car Photo]</div>
+                    <div class="work-content">
+                        <span class="work-tag" style="color: var(--text-secondary);">Dealer Stock</span>
+                        <h3 style="margin: 8px 0; font-size: 1.1rem;">1998 Toyota Supra 3.0 SZ</h3>
+                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Price on request[cite: 48]</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 16px;">5-speed manual. 39,000 km. Super Red IV. No repair history[cite: 48].</p>
+                        <a href="https://www.carsensor.net/" target="_blank" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px; margin-bottom: 8px;">View on Car Sensor</a>
+                        <a href="https://wa.me/817085243763?text=Inquiry:%201998%20Toyota%20Supra" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; padding: 10px;">Inquire on WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="work-card">
+                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">[Car Photo]</div>
+                    <div class="work-content">
+                        <span class="work-tag" style="color: var(--text-secondary);">Dealer Stock</span>
+                        <h3 style="margin: 8px 0; font-size: 1.1rem;">1999 Mazda RX-7 Type RS</h3>
+                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Price on request[cite: 48]</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 16px;">5-speed manual. 78,000 km. Innocent Blue Mica. No repair history[cite: 48].</p>
+                        <a href="https://www.carsensor.net/" target="_blank" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px; margin-bottom: 8px;">View on Car Sensor</a>
+                        <a href="https://wa.me/817085243763?text=Inquiry:%201999%20Mazda%20RX-7" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; padding: 10px;">Inquire on WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="work-card">
+                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">[Car Photo]</div>
+                    <div class="work-content">
+                        <span class="work-tag" style="color: var(--text-secondary);">Dealer Stock</span>
+                        <h3 style="margin: 8px 0; font-size: 1.1rem;">2001 Porsche 911 Carrera Tiptronic S</h3>
+                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Price on request[cite: 48]</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 16px;">5-speed Tiptronic automatic. 60,000 km. Arctic Silver. No repair history[cite: 48].</p>
+                        <a href="https://www.carsensor.net/" target="_blank" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px; margin-bottom: 8px;">View on Car Sensor</a>
+                        <a href="https://wa.me/817085243763?text=Inquiry:%202001%20Porsche%20911" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; padding: 10px;">Inquire on WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="work-card">
+                    <div class="work-img" style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:0.9rem;">[Car Photo]</div>
+                    <div class="work-content">
+                        <span class="work-tag" style="color: var(--text-secondary);">Dealer Stock</span>
+                        <h3 style="margin: 8px 0; font-size: 1.1rem;">1996 Honda Integra Type R</h3>
+                        <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Price on request[cite: 48]</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 16px;">5-speed manual. 84,000 km. White. No repair history[cite: 48].</p>
+                        <a href="https://www.carsensor.net/" target="_blank" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 10px; margin-bottom: 8px;">View on Car Sensor</a>
+                        <a href="https://wa.me/817085243763?text=Inquiry:%201996%20Honda%20Integra" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; padding: 10px;">Inquire on WhatsApp</a>
                     </div>
                 </div>
 
@@ -143,9 +202,31 @@
     </div>
 </section>
 
+<!-- Fix 12: Footer -->
 <footer>
     <div class="container">
-        <p>&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan.</p>
+        <p><strong>Shibuya Export</strong> — Your eyes and hands in Japan's car markets[cite: 48].</p>
+        <p style="margin-top: 6px;">WhatsApp: +81 70 8524 3763 | Email: sales@shibuyaexport.com[cite: 48]</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+            <a href="https://wa.me/817085243763" target="_blank" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+            </a>
+        </div>
+        <p style="margin-top: 16px; font-size: 0.8rem;">&copy; 2026 Shibuya Export. All rights reserved. Tokyo, Japan[cite: 48].</p>
     </div>
 </footer>
 
@@ -153,26 +234,16 @@
     function switchTab(tabId, btnElement) {
         document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
         document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-
         document.getElementById(tabId).classList.add('active');
         btnElement.classList.add('active');
     }
 
     const toggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
-
-    if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-mode');
-    }
-
+    if (localStorage.getItem('theme') === 'dark') { body.classList.add('dark-mode'); }
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
-
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
-        } else {
-            localStorage.setItem('theme', 'light');
-        }
+        localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
     });
 </script>
 
