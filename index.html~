@@ -107,68 +107,8 @@
         </div>
     </section>
 
-    <!-- Fix 4: Pricing -->
-    <section id="pricing" class="section section-alt">
-        <div class="container">
-            <div class="section-head">
-                <h2>Pricing</h2>
-                <p>Everything is on one itemized invoice: the car, purchase handling, service fee, commission, FOB and ocean freight to your port.</p>
-            </div>
-
-            <div class="card" style="max-width: 860px; margin: 0 auto;">
-                <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 8px;">
-                    Purchase handling: 4% of the car's final purchase price &nbsp;&middot;&nbsp; Service fee: 1% of the car's final purchase price
-                </p>
-
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Car price (USD)</th>
-                            <th class="right">Commission</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Up to $20,000</td><td class="right">$1,250</td></tr>
-                        <tr><td>$20,001–30,000</td><td class="right">$1,750</td></tr>
-                        <tr><td>$30,001–40,000</td><td class="right">$2,450</td></tr>
-                        <tr><td>$40,001–89,999</td><td class="right">$2,950</td></tr>
-                        <tr><td>$90,000–149,999</td><td class="right">$6,500</td></tr>
-                        <tr><td>$150,000–249,999</td><td class="right">$9,000</td></tr>
-                        <tr><td>$250,000 and over</td><td class="right">Negotiated</td></tr>
-                    </tbody>
-                </table>
-
-                <p style="margin-bottom: 12px;"><strong>Included in the commission:</strong> in-person inspection with paint gauge readings, translated auction sheet, recommended max bid based on real auction results, video call, and bidding on your behalf.</p>
-                <p style="margin-bottom: 12px;"><strong>FOB: $1,600 per car.</strong> Covers auction fees, inland transport to port, de-registration and export customs clearance.</p>
-                <p style="margin-bottom: 28px;"><strong>Ocean freight:</strong> quoted for your port. Rates change with the market, and your exact rate is confirmed when the car is booked. RoRo or container, your choice.</p>
-
-                <h3 style="margin-bottom: 8px;">Example: $30,000 car to Baltimore, USA</h3>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Item</th>
-                            <th class="right">Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Car</td><td class="right">$30,000</td></tr>
-                        <tr><td>Purchase handling (4%)</td><td class="right">$1,200</td></tr>
-                        <tr><td>Service fee (1%)</td><td class="right">$300</td></tr>
-                        <tr><td>Commission</td><td class="right">$1,750</td></tr>
-                        <tr><td>FOB</td><td class="right">$1,600</td></tr>
-                        <tr><td>Ocean freight</td><td class="right">~$2,400</td></tr>
-                        <tr class="total-row"><td>Total to port</td><td class="right">~$37,250</td></tr>
-                    </tbody>
-                </table>
-
-                <p style="margin-bottom: 6px;">Port to port service. Destination customs, duty and taxes are paid by the buyer.</p>
-                <p><strong>Dealers and trade partners:</strong> ask about trade terms.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Fix 3: Export Process -->
-    <section id="process" class="section">
+    <!-- Fix 3: Export Process (Swapped to be above Pricing) -->
+    <section id="process" class="section section-alt">
         <div class="container">
             <div class="section-head">
                 <h2>Export Process</h2>
@@ -204,38 +144,115 @@
         </div>
     </section>
 
-    <!-- Fix 5 & Fix 6: Where We Ship & US Military Line -->
-    <section id="shipping" class="section section-alt">
+    <!-- Fix 4, 5 & 6: Combined Pricing & Where We Ship Section -->
+    <section id="pricing" class="section">
         <div class="container">
             <div class="section-head">
-                <h2>Where We Ship</h2>
-                <p>Transit times are sea time from departure in Japan and depend on vessel schedules.</p>
+                <h2>Pricing &amp; Where We Ship</h2>
+                <p>Everything is on one itemized invoice: the car, purchase handling, service fee, commission, FOB and ocean freight to your port.</p>
             </div>
 
-            <div class="card" style="max-width: 760px; margin: 0 auto 28px;">
-                <table class="data-table" style="margin-top: 0;">
-                    <thead>
-                        <tr>
-                            <th>Destination</th>
-                            <th class="right">Estimated Transit</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Hong Kong</td><td class="right">~7 days</td></tr>
-                        <tr><td>Australia</td><td class="right">~15 days</td></tr>
-                        <tr><td>US West Coast</td><td class="right">~15 days</td></tr>
-                        <tr><td>Dubai (UAE)</td><td class="right">~25 days</td></tr>
-                        <tr><td>US East Coast (Baltimore, Newport RI)</td><td class="right">~30 days</td></tr>
-                        <tr><td>Central Asia &amp; Europe</td><td class="right">Quoted per route</td></tr>
-                    </tbody>
-                </table>
-                <p style="font-size: 0.9rem;">Transit times are sea time from departure in Japan and depend on vessel schedules. Your exact sailing date and estimated arrival are confirmed once the car is booked.</p>
-            </div>
+            <div class="card">
+                <!-- Row 1: Okinawa Banner (Full Width Top) -->
+                <div style="padding-bottom: 28px; margin-bottom: 32px; border-bottom: 1px solid var(--border-color); text-align: center;">
+                    <h3 style="margin-bottom: 6px;">Serving US military on Okinawa.</h3>
+                    <p>We help service members stationed on Okinawa buy cars straight from Japanese auctions, with a team that regularly visits the island.</p>
+                </div>
 
-            <!-- Fix 6: US Military Line -->
-            <div class="card" style="max-width: 760px; margin: 0 auto; text-align: center;">
-                <h3 style="margin-bottom: 8px;">Serving US military on Okinawa.</h3>
-                <p>We help service members stationed on Okinawa buy cars straight from Japanese auctions, with a team that regularly visits the island.</p>
+                <!-- Row 2: Pricing (Left) & Ship Times (Right) balanced evenly -->
+                <div class="grid-2" style="align-items: stretch; margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--border-color);">
+                    
+                    <!-- Left Column: Pricing Table -->
+                    <div class="equal-col">
+                        <div>
+                            <h3>Pricing</h3>
+                            <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 12px; font-size: 0.9rem;">
+                                Purchase handling: 4% of the car's final purchase price &nbsp;&middot;&nbsp; Service fee: 1% of the car's final purchase price
+                            </p>
+
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Car price (USD)</th>
+                                        <th class="right">Commission</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Up to $20,000</td><td class="right">$1,250</td></tr>
+                                    <tr><td>$20,001–30,000</td><td class="right">$1,750</td></tr>
+                                    <tr><td>$30,001–40,000</td><td class="right">$2,450</td></tr>
+                                    <tr><td>$40,001–89,999</td><td class="right">$2,950</td></tr>
+                                    <tr><td>$90,000–149,999</td><td class="right">$6,500</td></tr>
+                                    <tr><td>$150,000–249,999</td><td class="right">$9,000</td></tr>
+                                    <tr><td>$250,000 and over</td><td class="right">Negotiated</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <p style="margin-bottom: 10px;"><strong>Included in the commission:</strong> in-person inspection with paint gauge readings, translated auction sheet, recommended max bid based on real auction results, video call, and bidding on your behalf.</p>
+                            <p style="margin-bottom: 10px;"><strong>FOB: $1,600 per car.</strong> Covers auction fees, inland transport to port, de-registration and export customs clearance.</p>
+                            <p><strong>Ocean freight:</strong> quoted for your port. Rates change with the market, and your exact rate is confirmed when the car is booked. RoRo or container, your choice.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Ship Times Table -->
+                    <div class="equal-col">
+                        <div>
+                            <h3>Where We Ship</h3>
+                            <p style="margin-bottom: 12px; font-size: 0.9rem;">
+                                Sea time from departure in Japan.
+                            </p>
+
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Destination</th>
+                                        <th class="right">Estimated Transit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Hong Kong</td><td class="right">~7 days</td></tr>
+                                    <tr><td>Australia</td><td class="right">~15 days</td></tr>
+                                    <tr><td>US West Coast</td><td class="right">~15 days</td></tr>
+                                    <tr><td>Dubai (UAE)</td><td class="right">~25 days</td></tr>
+                                    <tr><td>US East Coast (Baltimore, Newport RI)</td><td class="right">~30 days</td></tr>
+                                    <tr><td>Central Asia &amp; Europe</td><td class="right">Quoted per route</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <p>Transit times are sea time from departure in Japan and depend on vessel schedules. Your exact sailing date and estimated arrival are confirmed once the car is booked.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Row 3: Example Breakdown (Full Width Bottom) -->
+                <div>
+                    <h3 style="margin-bottom: 8px;">Example: $30,000 car to Baltimore, USA</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="right">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Car</td><td class="right">$30,000</td></tr>
+                            <tr><td>Purchase handling (4%)</td><td class="right">$1,200</td></tr>
+                            <tr><td>Service fee (1%)</td><td class="right">$300</td></tr>
+                            <tr><td>Commission</td><td class="right">$1,750</td></tr>
+                            <tr><td>FOB</td><td class="right">$1,600</td></tr>
+                            <tr><td>Ocean freight</td><td class="right">~$2,400</td></tr>
+                            <tr class="total-row"><td>Total to port</td><td class="right">~$37,250</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p style="margin-bottom: 6px;">Port to port service. Destination customs, duty and taxes are paid by the buyer.</p>
+                    <p><strong>Dealers and trade partners:</strong> ask about trade terms.</p>
+                </div>
             </div>
         </div>
     </section>
