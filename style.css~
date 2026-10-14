@@ -1,11 +1,11 @@
 :root {
-    --bg-main: #f5f5f5;         /* Light neutral grey background */
-    --bg-card: #ffffff;         /* Pure white cards */
-    --border-color: #e5e5e5;    /* Neutral grey borders */
+    --bg-main: #f5f5f5;         
+    --bg-card: #ffffff;         
+    --border-color: #e5e5e5;    
     --border-hover: #d4d4d4;
-    --text-primary: #171717;    /* Near-black primary text */
-    --text-secondary: #525252;  /* Medium neutral grey text */
-    --btn-primary: #404040;     /* Neutral dark grey button */
+    --text-primary: #171717;
+    --text-secondary: #525252;  
+    --btn-primary: #404040;     
     --btn-primary-hover: #171717;
 
     --bg-input: #f5f5f5;
@@ -51,9 +51,7 @@ a:hover {
     padding: 0 24px;
 }
 
-/* =========================================
-   Splash Screen Overlay
-   ========================================= */
+/* Splash Screen Overlay */
 #splash-screen {
     position: fixed;
     top: 0;
@@ -92,9 +90,7 @@ a:hover {
     to { transform: scale(1.05); }
 }
 
-/* =========================================
-   Header & Navigation
-   ========================================= */
+/* Header & Nav */
 header {
     position: sticky;
     top: 0;
@@ -176,9 +172,7 @@ nav a.active, nav a:hover {
     color: var(--text-primary);
 }
 
-/* =========================================
-   Hero Section
-   ========================================= */
+/* Hero Section */
 .hero {
     position: relative;
     padding: 120px 0 110px;
@@ -254,9 +248,7 @@ nav a.active, nav a:hover {
     60% { transform: translate(-50%, -5px); }
 }
 
-/* =========================================
-   Buttons
-   ========================================= */
+/* Buttons */
 .btn {
     padding: 14px 28px;
     border-radius: 6px;
@@ -290,8 +282,7 @@ nav a.active, nav a:hover {
     background-color: var(--border-color);
 }
 
-/* --- 3 Distinct Solid Hero Buttons --- */
-/* 1. Request a Vehicle: Crisp White */
+/* 3 Distinct Solid Hero Buttons */
 .hero .btn-primary {
     background-color: #ffffff;
     color: #171717 !important;
@@ -306,7 +297,6 @@ nav a.active, nav a:hover {
     opacity: 1;
 }
 
-/* 2. Email Us Directly: Solid Matte Charcoal */
 .hero a[href^="mailto:"].btn-secondary {
     background-color: #333333;
     color: #ffffff !important;
@@ -321,7 +311,6 @@ nav a.active, nav a:hover {
     opacity: 1;
 }
 
-/* 3. WhatsApp Us: Solid Refined Emerald Green */
 .hero a[href*="wa.me"].btn-secondary {
     background-color: #1da851;
     color: #ffffff !important;
@@ -336,9 +325,7 @@ nav a.active, nav a:hover {
     opacity: 1;
 }
 
-/* =========================================
-   Sections, Grids & Cards
-   ========================================= */
+/* Sections, Grids & Cards */
 .section {
     padding: 76px 0;
     background-color: var(--bg-main);
@@ -405,9 +392,14 @@ nav a.active, nav a:hover {
     font-size: 0.95rem;
 }
 
-/* =========================================
-   Tables (Pricing & Shipping)
-   ========================================= */
+/* Tables (Pricing & Shipping) - Balanced Height Utility */
+.equal-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -441,9 +433,7 @@ nav a.active, nav a:hover {
     border-bottom: none;
 }
 
-/* =========================================
-   Dealer & Past Export Cards
-   ========================================= */
+/* Dealer & Past Export Cards */
 .work-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -509,9 +499,7 @@ nav a.active, nav a:hover {
     gap: 8px;
 }
 
-/* =========================================
-   Sourcing Tabs
-   ========================================= */
+/* Sourcing Tabs */
 .tab-nav {
     display: flex;
     justify-content: center;
@@ -556,9 +544,7 @@ nav a.active, nav a:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* =========================================
-   Forms & Inputs
-   ========================================= */
+/* Forms & Inputs */
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -635,9 +621,7 @@ input:focus, select:focus, textarea:focus {
     font-weight: 500;
 }
 
-/* =========================================
-   Social Icons & Footer
-   ========================================= */
+/* Social Icons & Footer */
 .social-links {
     display: flex;
     justify-content: center;
@@ -701,9 +685,7 @@ footer .social-links a:hover {
     color: var(--text-primary);
 }
 
-/* =========================================
-   Dark Mode Override (True Grey/Black)
-   ========================================= */
+/* Dark Mode Override */
 body.dark-mode {
     --bg-main: #121212;
     --bg-card: #1e1e1e;
@@ -731,9 +713,7 @@ body.dark-mode .splash-logo {
     filter: none;
 }
 
-/* =========================================
-   Mobile Responsiveness
-   ========================================= */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .nav-wrap {
         position: relative;
@@ -745,18 +725,18 @@ body.dark-mode .splash-logo {
     }
 
     .brand {
-        font-size: 1rem;
-        padding-right: 44px; /* Leaves room for the top-right theme button */
+        font-size: 1.05rem;
+        padding-right: 44px;
     }
 
     .brand-logo {
-        height: 38px;
-        width: 38px;
+        height: 40px;
+        width: 40px;
     }
 
     nav {
         width: 100%;
-        padding-top: 10px;
+        padding-top: 8px;
         border-top: 1px solid var(--border-color);
     }
 
@@ -769,17 +749,11 @@ body.dark-mode .splash-logo {
     }
 
     nav a {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         padding: 6px 6px;
         white-space: nowrap;
     }
 
-    .btn-nav {
-        padding: 6px 12px !important;
-        font-size: 0.85rem !important;
-    }
-
-    /* Pin the dark-mode button to the top-right corner on mobile */
     .theme-btn {
         position: absolute;
         top: 15px;
@@ -839,13 +813,7 @@ body.dark-mode .splash-logo {
     }
 
     .card {
-        padding: 22px;
-    }
-
-    .data-table th,
-    .data-table td {
-        padding: 10px 8px;
-        font-size: 0.88rem;
+        padding: 24px;
     }
 
     .tab-nav {
