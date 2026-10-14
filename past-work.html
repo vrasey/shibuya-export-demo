@@ -65,13 +65,13 @@
         <div class="grid-3">
             <!-- Tester Car: Porsche Cayenne GTS -->
             <div class="work-card">
-                <img id="cayenne-main-img" src="porsche_suv_3.jpeg" alt="Porsche Cayenne GTS" class="work-img" style="height: 250px;">
+                <img src="porsche_suv_3.jpeg" alt="Porsche Cayenne GTS" class="work-img" style="height: 250px;">
                 
                 <!-- 3-Photo Switcher -->
                 <div class="thumb-strip">
-                    <img src="porsche_suv_3.jpeg" alt="Front Quarter" class="active-thumb" onclick="swapPhoto('cayenne-main-img', this)">
-                    <img src="porsche_suv_1.jpeg" alt="Rear Quarter" onclick="swapPhoto('cayenne-main-img', this)">
-                    <img src="porsche_suv_2.jpeg" alt="Interior RHD" onclick="swapPhoto('cayenne-main-img', this)">
+                    <img src="porsche_suv_3.jpeg" alt="Front Quarter" class="active-thumb" onclick="swapPhoto(this)">
+                    <img src="porsche_suv_1.jpeg" alt="Rear Quarter" onclick="swapPhoto(this)">
+                    <img src="porsche_suv_2.jpeg" alt="Interior RHD" onclick="swapPhoto(this)">
                 </div>
 
                 <div class="work-content">
@@ -119,8 +119,10 @@
 </footer>
 
 <script>
-    function swapPhoto(mainImgId, thumbEl) {
-        document.getElementById(mainImgId).src = thumbEl.src;
+    // Swaps the big photo when a thumbnail is clicked. Works for any card, no IDs needed.
+    function swapPhoto(thumbEl) {
+        const card = thumbEl.closest('.work-card');
+        card.querySelector('.work-img').src = thumbEl.src;
         thumbEl.parentElement.querySelectorAll('img').forEach(img => img.classList.remove('active-thumb'));
         thumbEl.classList.add('active-thumb');
     }
