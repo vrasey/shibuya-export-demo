@@ -107,7 +107,7 @@
         </div>
     </section>
 
-    <!-- Fix 3: Export Process (Swapped to be above Pricing) -->
+    <!-- Fix 3: Export Process -->
     <section id="process" class="section section-alt">
         <div class="container">
             <div class="section-head">
@@ -159,7 +159,7 @@
                     <p>We help service members stationed on Okinawa buy cars straight from Japanese auctions, with a team that regularly visits the island.</p>
                 </div>
 
-<!-- Row 2: Pricing (Left) & Ship Times (Right) -->
+                <!-- Row 2: Pricing (Left) & Ship Times (Right) -->
                 <div class="pricing-split-grid">
                     
                     <!-- Left Column: Pricing Table & Commission Notes -->
@@ -228,30 +228,63 @@
                     </div>
 
                 </div>
+            </div>
 
-                <!-- Row 3: Example Breakdown (Full Width Bottom) -->
-                <div>
-                    <h3 style="margin-bottom: 8px;">Example: $30,000 car to Baltimore, USA</h3>
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th class="right">Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Car</td><td class="right">$30,000</td></tr>
-                            <tr><td>Purchase handling (4%)</td><td class="right">$1,200</td></tr>
-                            <tr><td>Service fee (1%)</td><td class="right">$300</td></tr>
-                            <tr><td>Commission</td><td class="right">$1,750</td></tr>
-                            <tr><td>FOB</td><td class="right">$1,600</td></tr>
-                            <tr><td>Ocean freight</td><td class="right">~$2,400</td></tr>
-                            <tr class="total-row"><td>Total to port</td><td class="right">~$37,250</td></tr>
-                        </tbody>
-                    </table>
+            <!-- Example Breakdown: its own card -->
+            <div class="card example-card">
+                <div class="section-head example-head">
+                    <h2>What an Order Actually Costs</h2>
+                    <p>A real-world example, itemized the same way your invoice will be.</p>
+                </div>
 
-                    <p style="margin-bottom: 6px;">Port to port service. Destination customs, duty and taxes are paid by the buyer.</p>
+                <div class="example-grid">
+
+                    <!-- Left: context without percentage bar -->
+                    <div class="example-intro">
+                        <span class="work-tag">Example</span>
+                        <h3>$30,000 car to Baltimore, USA</h3>
+                        <p style="margin-bottom: 20px;">Every order is billed on one itemized invoice. Here is how a $30,000 car shipped to Baltimore breaks down: the car itself, our fees, and the cost of getting it to your port.</p>
+
+                        <ul class="cost-legend">
+                            <li><span class="dot seg-car"></span>Car: <strong>$30,000 (80%)</strong></li>
+                            <li><span class="dot seg-fees"></span>Our fees: <strong>$3,250 (9%)</strong></li>
+                            <li><span class="dot seg-ship"></span>Shipping: <strong>$4,000 (11%)</strong></li>
+                        </ul>
+
+                        <div class="callout">
+                            <strong>Port to port service.</strong> Customs, duty and taxes at the destination are paid by the buyer.
+                        </div>
+                    </div>
+
+                    <!-- Right: invoice -->
+                    <div class="invoice">
+                        <table class="invoice-table">
+                            <tbody>
+                                <tr class="group-row"><td>Car</td><td class="right">$30,000</td></tr>
+
+                                <tr class="group-head"><td colspan="2">Our fees</td></tr>
+                                <tr class="line"><td>Purchase handling (4%)</td><td class="right">$1,200</td></tr>
+                                <tr class="line"><td>Service fee (1%)</td><td class="right">$300</td></tr>
+                                <tr class="line"><td>Commission</td><td class="right">$1,750</td></tr>
+                                <tr class="subtotal"><td>Fees subtotal</td><td class="right">$3,250</td></tr>
+
+                                <tr class="group-head"><td colspan="2">Shipping</td></tr>
+                                <tr class="line"><td>FOB</td><td class="right">$1,600</td></tr>
+                                <tr class="line"><td>Ocean freight</td><td class="right">~$2,400</td></tr>
+                                <tr class="subtotal"><td>Shipping subtotal</td><td class="right">~$4,000</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="invoice-total">
+                            <span>Total to port</span>
+                            <span>~$37,250</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="example-footer">
                     <p><strong>Dealers and trade partners:</strong> ask about trade terms.</p>
+                    <a href="contact.html" class="btn btn-primary">Ask About Trade Terms</a>
                 </div>
             </div>
         </div>
